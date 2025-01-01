@@ -23,5 +23,211 @@
   </head>
   <body>
 
+    <header>
+
+      <span>CyberExpress</span>
+
+  </header>
+
+  <main>
+
+      <h1>Caixa de Sugestões</h1>
+
+      <p>Escreva na caixa de texto abaixo o que podemos fazer para melhorar
+      o espaço do CyberExpress. Deixe seu elogio, crítica ou sugestão abaixo e
+      envie pra gente!</p>
+
+      <form action="https://www.devmedia.com.br/codigos/formularios/aula2/">
+          <textarea name="sugestao"></textarea>
+          <button type="submit">Enviar sugestão</button>
+      </form>
+
+  </main>
+
+  <footer>
+
+      Copyright 2022 - CyberExpress
+
+  </footer>
+
+
+<!-- tipo de inputs -->
+  <form>
+    <input type="text" name="nome"/>
+
+    <input type="date" name="data_nascimento"/>
+
+    <input type="email" name="email" />
+
+    <input type="tel" name="telefone" />
+
+    <input type="number" name="codigo_confirmacao" />
+
+    <input type="text" name="login" />
+
+    <input type="password" name="senha" />
+
+    <button type="submit">Enviar Matrícula</button>
+
+</form>
+
+
+
+<!-- labem -->
+<form>
+
+  <label>Nome</label>
+  <input type="text">
+
+  <label>Email</label>
+  <input type="email">
+
+  <label>Login</label>
+  <input type="text">
+
+  <label>Senha</label>
+  <input type="password">
+
+  <button type="submit">Entrar</button>
+
+</form>
+
+
+<!-- propriedades -->
+<form>
+ 
+  <!-- uso do placeholder da uma sugestão para o usuario -->
+  <input type="text" name="nome" placeholder="Digite seu nome"/>
+
+  <!--  uso do required, faz o campo ficar obrigatorio  -->
+  <input type="text" name="nome" placeholder="Digite seu nome" required/>
+
+  <!-- restrigi os caracteres -->
+  <input type="password" name="senha" minlength="4" maxlength="6"/>
+
+  <!-- restrigi os numeros e datas -->
+  <input type="number" name="idade" min="18" max="21"/>
+<input type="date" name="idade" min="2022-03-01" max="2022-03-15"/>
+
+
+</form>
+
+
+<!-- checkbox -->
+<form>
+
+    Quais seus esportes favoritos?<br><br>
+
+    <input type="checkbox" id="checkbox-futebol" name="esportes[]" value="futebol"/>
+    <label for="checkbox-futebol">Futebol</label>
+
+    <input type="checkbox" id="checkbox-volei" name="esportes[]" value="volei"/>
+    <label for="checkbox-volei">Vôlei</label>
+
+    <input type="checkbox" id="checkbox-basquete" name="esportes[]" value="basquete"/>
+    <label for="checkbox-basquete">Basquete</label>
+
+    <button type="submit">Enviar formulário</button>
+
+  <!-- (checked) torna ele maracado por padrão -->
+
+</form>
+
+
+<!-- radio, permite apenas uma resposta -->
+<form>
+
+  <h2>Possui animal de estimação?</h2>
+
+  <input type="radio" name="resposta" id="animal-sim" value="sim" required/>
+  <label for="animal-sim">Sim</label>
+
+  <input type="radio" name="resposta" id="animal-nao" value="nao"/>
+  <label for="animal-nao">Não</label>
+
+  <button type="submit">Enviar formulário</button>
+
+</form>
+
+<!-- select, faz uma gaveta -->
+<form>
+
+  <select name="cores">
+
+      <option value="blue">Azul</option>
+      <option value="red">Vermelho</option>
+      <option value="yellow">Amarelo</option>
+      <option value="pink">Rosa</option>
+
+  </select>
+
+  <!-- agrupamento de selct -->
+  <select name="jogo">
+    <optgroup label="Xbox">
+      <option value="gearsofwar">Gears of War</option>
+      <option value="haloinfinite">Halo Infinite</option>
+      <option value="forzamotorsport">Forza Motorsport</option>
+      <option value="forzahorizon">Forza Horizon</option>
+    </optgroup>
+  
+    <optgroup label="PlayStation">
+      <option value="godofwar">God of War</option>
+      <option value="uncharted">Uncharted</option>
+      <option value="thelastofus">The Last of Us</option>
+      <option value="granturismo">Gran Turismo</option>
+    </optgroup>
+  
+    <optgroup label="Nintendo">
+      <option value="mariokart">Mario Kart 8 Deluxe</option>
+      <option value="zelda">The Legend of Zelda</option>
+      <option value="mario">Super Mario Odyssey</option>
+    </optgroup>
+  </select>
+  <!-- fim agrupamento -->
+
+  <!-- mutiplas escolhas no select -->
+  <select name="jogo[]" multiple>
+
+    <option value="mariokart">Mario Kart 8 Deluxe</option>
+    <option value="zelda">The Legend of Zelda</option>
+    <option value="mario">Super Mario Odyssey</option>
+
+  </select>
+  <!-- fim escolhas -->
+
+  <!-- size, aumenta o numero de escolhas do usuario em relação ao que ele ver -->
+  <select name="jogo[]"  size="8" multiple>
+   <!-- fim size -->
+ 
+
+
+  <button type="submit">Enviar Formulário</button>
+
+</form>
+
+
+<!-- separação de area e titulo -->
+<form>
+
+  <fieldset>
+      <legend>Dados pessoais</legend>
+      <div>
+          <label>Nome</label>
+          <input type="text" name="nome"/>
+      </div>
+      <div>
+          <label>Data de Nascimento</label>
+          <input type="date" name="data_nascimento"/>
+      </div>
+      <div>
+          <label>Email</label>
+          <input type="email" name="email"/>
+      </div>
+  </fieldset>
+
+  <button type="submit">Enviar</button>
+
+</form>
+
   </body>
 </html>
